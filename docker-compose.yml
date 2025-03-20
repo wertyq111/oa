@@ -20,7 +20,7 @@ services:
         volumes:
             - '.:/var/www/html'
         networks:
-            - sail
+            - oa
         depends_on:
             - mysql
             - redis
@@ -111,7 +111,7 @@ services:
         networks:
             - oa
 networks:
-    sail:
+    oa:
         driver: bridge
 volumes:
     sail-mysql:
